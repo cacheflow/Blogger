@@ -1,0 +1,17 @@
+<%= form_for @author, {url: "/auths"} do |f| %>
+  <p> 
+    <%= f.label :email %> <br/>
+    <%= f.text_field :email, :placeholder => "enter email" %>
+ </p> 
+
+
+<p>
+    <%= f.label :password %><br/>
+    <%= f.text_field :password, :placeholder => "enter password" %>
+</p>
+  
+ 
+    <%= f.submit 'Log In' %>
+  
+
+<% end %>

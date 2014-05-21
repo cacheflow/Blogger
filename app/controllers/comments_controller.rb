@@ -10,7 +10,7 @@ def create
 end 
 
 def index 
-@comments = Comment.all
+	@comments = Comment.all
 end 
 
 def comment_params 

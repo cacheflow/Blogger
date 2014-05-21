@@ -6,7 +6,7 @@ def index
 end 
 
 def update 
-	@article.Article.find(params[:id])
+	@article = article.find(params[:id])
 	@article.update(article_params)
 	flash.notice = "Article" '#{article.title} Updated!'
 
