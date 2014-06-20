@@ -1,6 +1,15 @@
 require "bcrypt"
 
 class Author < ActiveRecord::Base
+
+	include Mongoid::Document
+
+	field :email, type: String
+	field :hashed_password, type: String 
+	field :salt, type: String
+
+
+
 	attr_accessor :password 
 						#pwd represents the actual password someone is passing in from the
 						#auths controller 
@@ -24,7 +33,8 @@ class Author < ActiveRecord::Base
 
 		end 
 
-
+	
+   
 
 
 end

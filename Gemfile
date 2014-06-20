@@ -7,6 +7,8 @@ gem 'rails', '4.1.0'
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+
+gem 'mongoid', github: 'mongoid/mongoid' 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -14,7 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem "bcrypt-ruby", ">= 3.0.0"
 
-gem 'paperclip'
+gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
