@@ -1,4 +1,3 @@
-<h1>Editing your form</h1>
-
+<h1>Edit an article </h1>
 <%= render partial: 'form' %>
-<%end%>
+
